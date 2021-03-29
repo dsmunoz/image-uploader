@@ -4,6 +4,8 @@
 /storage/*.key
 /vendor
 /.idea/workspace.xml
+/.idea
+/public/js/app.js
 .env
 .env.backup
 .phpunit.result.cache

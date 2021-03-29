@@ -1,10 +1,21 @@
 const mix = require('laravel-mix');
 mix.options({
     hmrOptions: {
-        host: '192.168.10.10',
-        port: '8080'
+        host: 'image-uploader.test',
+        port: 8080
     },
 })
+mix.webpackConfig({
+    devServer: {
+        host: '0.0.0.0',
+        port: 8080,
+    },
+    watchOptions: {
+        poll: true,
+        aggregateTimeout: 200,
+    }
+})
+
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management

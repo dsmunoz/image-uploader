@@ -3,9 +3,8 @@
         <el-form class="centered">
             <h2> File uploader</h2>
             <p>
-                Please select or drop a .png file to upload an image
+                Please select or drop a .png file to upload.
             </p>
-
             <div class="image-preview">
                 <img class="image-holder" v-if=this.image :src="image"/>
                 <p v-else > Image Preview</p>
@@ -25,7 +24,6 @@
                 <div class="el-upload__text">Drop file here or <em>click to upload</em></div>
                 <div class="el-upload__tip" slot="tip">Only .png files are allowed and max file size is 2M</div>
             </el-upload>
-
         </el-form>
     </div>
 </template>
